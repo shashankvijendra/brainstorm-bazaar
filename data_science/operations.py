@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load data from a CSV file
-df = pd.read_csv('/home/shashank/Downloads/Electric_Vehicle_Population_Data.csv')
+df = pd.read_csv('Electric_Vehicle_Population_Data.csv')
 
 # Assuming 'column_name' is the name of the column you're interested in
 # Replace 'column_name' with the actual column name from your dataset
