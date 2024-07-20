@@ -7,11 +7,11 @@ df = pd.read_csv('Electric_Vehicle_Population_Data.csv')
 # Replace 'column_name' with the actual column name from your dataset
 
 # Calculate and print mean
-mean_value = df['Postal Code'].mean()
+mean_value = df['PostalCode'].mean()
 print(f'Mean: {mean_value}')
 
 # Calculate and print median
-median_value = df['Model Year'].median()
+median_value = df['ModelYear'].median()
 print(f'Median: {median_value}')
 
 # Calculate and print mode(s)
@@ -19,7 +19,7 @@ mode_values = df['Legislative District'].mode()
 print(f'Mode(s): {mode_values}')
 
 # Calculate and print standard deviation
-std_dev = df['Model Year'].std()
+std_dev = df['ModelYear'].std()
 print(f'Standard Deviation: {std_dev}')
 
 # Calculate and print variance
