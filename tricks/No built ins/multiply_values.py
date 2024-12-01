@@ -1,18 +1,18 @@
 """Multiply the values without using the  * """
 
 
-def multiply(a, b):
+def multiply(a_value, b_value):
+    """
+    Multiply two values without using the  *  operator.
+    """
     result = 0
-    # Determine the absolute values to handle negative numbers correctly
-    abs_a = abs(a)
-    abs_b = abs(b)
-    
-    # Use a loop to add 'a' to itself 'b' times
+    abs_a = abs(a_value)
+    abs_b = abs(b_value)
+
     for _ in range(abs_b):
         result += abs_a
-    
-    # Determine the sign of the result based on the signs of 'a' and 'b'
-    if (a > 0 and b > 0) or (a < 0 and b < 0):
+
+    if (a_value > 0 and b_value > 0) or (a_value < 0 and b_value < 0):
         return result
     else:
         return -result
@@ -21,3 +21,4 @@ def multiply(a, b):
 print(multiply(5, 6))  # Should print 30
 print(multiply(-3, 7))  # Should print -21
 print(multiply(-4, -8))  # Should print 32
+
