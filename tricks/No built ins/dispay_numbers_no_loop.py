@@ -1,10 +1,11 @@
 """Display numbers without using the for loop"""
 
-def nums(x):
-    print(x)
-    if x>=100:
-        return 
-    return nums(x+1)
+def display_numbers(start, end):
+    """Display numbers from start to end without using a for loop."""
+    if start > end:
+        return
+    print(start)
+    display_numbers(start + 1, end)
 
-nums(1)
+display_numbers(1, 10)
 

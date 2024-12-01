@@ -1,7 +1,10 @@
 """Add 2 number without using addition and subtraction operators"""
 
 
-def add_two_numbers(x, y):
+def add(x, y):
+    """
+    Add two numbers without using the addition and subtraction operators.
+    """
     # Iterate until there's nothing to carry
     while y:
         # Carry now contains common set bits of x and y
@@ -18,6 +21,6 @@ def add_two_numbers(x, y):
 # Example usage
 num1 = 5
 num2 = 7
-result = add_two_numbers(num1, num2)
+result = add(num1, num2)
 print(f"The sum of {num1} and {num2} is {result}")
 
